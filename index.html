@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vape Portugal | Vape Descartavel, Vapes e Cigarro Eletronico</title>
+  <meta name="description" content="Descobre os melhores vapes descartáveis e cigarros eletrónicos em Portugal. Sabores intensos, opções com e sem nicotina e milhares de tragadas. Compra online na tua vape shop.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/favicon-96x96.png" type="image/x-icon">
+</head>
+<body>
+  <div class="age-gate" id="ageGate" aria-hidden="false">
+    <div class="age-gate__panel">
+      <span class="eyebrow">Acesso restrito</span>
+      <h2>Tens pelo menos 18 anos?</h2>
+      <p>Este site contem produtos com nicotina. A nicotina e uma substancia aditiva.</p>
+      <div class="age-gate__actions">
+        <button class="btn btn-primary" id="confirmAge">Sim, continuar</button>
+        <button class="btn btn-secondary" id="rejectAge">Nao</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-alert">
+    AVISO: ESTE PRODUTO CONTEM NICOTINA. A NICOTINA E UMA SUBSTANCIA ADITIVA.
+  </div>
+
+  <header class="site-header">
+    <div class="container header-shell">
+      <a class="brand" href="https://vapeportugal.pt/" aria-label="Inicio">
+        <img src="img/favicon-96x96.png" alt="VapeDisconto logo" class="brand__logo">
+        <span class="brand__text">
+          <strong>VapeDesconto</strong>
+          <small>Vapes com maxima duracao</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="https://vapeportugal.pt/">Pagina Inicial</a>
+        <a href="https://vapeportugal.pt/">Produtos</a>
+        <a href="https://vapeportugal.pt/">Sobre Nos</a>
+        <a href="https://vapeportugal.pt/">Blog</a>
+        <a href="https://vapeportugal.pt/">Contacto</a>
+      </nav>
+
+      <a class="btn btn-primary header-cta" href="https://vapeportugal.pt/">Comprar agora</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__media">
+          <img src="img/Fumot-Vape-Descartável-Portugal-Banner.png" alt="Vape descartavel com sabores de vape" class="hero__image">
+          <div class="hero__floating-card">
+            <span>Oferta em destaque</span>
+            <strong>Ate 120.000 tragadas</strong>
+            <p>Até 120000 tragadas com desempenho contínuo, sabores intensos e autonomia prolongada para uma experiência de vaping duradoura.</p>
+          </div>
+        </div>
+
+        <div class="hero__content">
+          <span class="eyebrow">Tragadas garantidas</span>
+          <h1>Cigarro eletronico com sabores unicos</h1>
+          <p>
+            Uma vape shop em Portugal moderna e de alta performance, focada em vapes descartaveis, vape e cigarros
+            eletronicos, com design otimizado para conversao, garantindo uma experiencia fluida em telemovel e computador.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn-primary" href="https://vapeportugal.pt/">Comprar agora</a>
+            <a class="btn btn-secondary" href="https://vapeportugal.pt/">Ver mais</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero__stats">
+          <article class="stat-card">
+            <strong>24h</strong>
+            <span>Preparacao de pedidos</span>
+          </article>
+          <article class="stat-card">
+            <strong>1000+</strong>
+            <span>Sabores de vape</span>
+          </article>
+          <article class="stat-card">
+            <strong>50%</strong>
+            <span>Desconto maximo</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits benefits--animated" id="benefits">
+      <div class="container">
+        <div class="section-heading benefits__heading reveal-up">
+          <span class="eyebrow">Porque escolher-nos</span>
+          <h2>Confianca, rapidez e a melhor experiencia de vape em Portugal</h2>
+          <p>Oferecemos uma experiencia simples, rapida e segura para quem procura vapes descartaveis, cigarros eletronicos e os melhores sabores de vape.</p>
+        </div>
+
+        <div class="benefits__grid">
+          <article class="info-card reveal-up">
+            <h3>Envio rapido</h3>
+            <p>Envio em 2-5 dias uteis para todo o pais, com entrega rapida e acompanhamento da encomenda.</p>
+          </article>
+          <article class="info-card reveal-up">
+            <h3>Catalogo autentico</h3>
+            <p>Grande variedade de vapes descartaveis, com muitas tragadas e diferentes sabores de vape.</p>
+          </article>
+          <article class="info-card reveal-up">
+            <h3>Descontos por volume</h3>
+            <p>Poupa mais ao comprar mais. Ofertas especiais em packs de vapes descartaveis.</p>
+          </article>
+          <article class="info-card reveal-up">
+            <h3>Apoio ao cliente</h3>
+            <p>Suporte rapido via WhatsApp ou e-mail para ajudar em qualquer duvida sobre vape.</p>
+          </article>
+          <article class="info-card reveal-up">
+            <h3>Pagamentos seguros</h3>
+            <p>Metodos de pagamento protegidos, com total seguranca na tua compra online.</p>
+          </article>
+          <article class="info-card reveal-up">
+            <h3>Sabores premium</h3>
+            <p>Descobre uma ampla selecao de sabores de vape: frutados, frescos, doces e exclusivos.</p>
+          </article>
+          <article class="info-card reveal-up">
+            <h3>Devolucoes simples</h3>
+            <p>Processo de devolucao claro e rapido para uma compra sem preocupacoes.</p>
+          </article>
+          <article class="info-card reveal-up">
+            <h3>Cobertura nacional</h3>
+            <p>Enviamos para todo Portugal, com servico adaptado ao mercado de vape Portugal.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Produtos Recomendados</span>
+          <h2>Descobre os melhores vapes descartaveis em Portugal</h2>
+          <p>Explora a nossa selecao de vapes descartaveis com mais tragadas, melhor desempenho e os melhores sabores de vape.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="img/VapSolo-Quads-80K-Vape-Descartável-Portugal-Strawberry-Mango-Watermelon-Ice-80000-Tragadas.png" alt="VapSolo Quads 80K Puffs" class="product-image">
+            <h3>VapSolo Quads 80K</h3>
+            <p class="product-meta">80000 tragadas</p>
+            <p>Vape descartavel</p>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/vapsolo-quads-80k-vape-descartavel-portugal">Comprar agora</a>
+          </article>
+          <article class="product-card">
+            <img src="img/JNR-Triple-3-em-1-110K-Vape-Descartável-Portugal-Watermelon-Ice-Triple-Melon-Strawberry-Watermelon-Ice-110000-Tragadas.png" alt="JNR Triple 3 em 1 110K Puffs" class="product-image">
+            <h3>JNR Triple 3 em 1 110K</h3>
+            <p class="product-meta">110000 tragadas</p>
+            <p>Vapes descartaveis</p>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/jnr-triple-110k-vape-descartavel-portugal">Comprar agora</a>
+          </article>
+          <article class="product-card">
+            <img src="img/Fumot-Eco-2-em-1-50K-Vape-Descartável-Portugal-Banana-Ice-Black-Dragon-Ice-50000-Tragadas.png" alt="Fumot Eco 2 em 1 50K Puffs" class="product-image">
+            <h3>Fumot Eco 2 em 1 50K</h3>
+            <p class="product-meta">50000 tragadas</p>
+            <p>Vape descartavel</p>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/fumot-eco-50k-vape-descartavel-portugal">Comprar agora</a>
+          </article>
+          <article class="product-card">
+            <img src="img/VapSolo-Twins-Pro-50K-Vape-Descartável-Portugal-Strawberry-kiwi-Strawberry-raspberry-chery-ice-50000-Tragadas.png" alt="VapSolo Twins Pro 50K Puffs" class="product-image">
+            <h3>VapSolo Twins Pro 50K</h3>
+            <p class="product-meta">50000 tragadas</p>
+            <p>Vape descartavel</p>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/vapsolo-twins-pro-50k-vape-descartavel-portugal">Comprar agora</a>
+          </article>
+          <article class="product-card">
+            <img src="img/MerryMi-Mecha-X-28K-Vape-Descartável-Portugal-Peach-Guava-28000-Tragadas.png" alt="MerryMi Mecha X 28K Puffs" class="product-image">
+            <h3>MerryMi Mecha X 28K</h3>
+            <p class="product-meta">28000 tragadas</p>
+            <p>Vape descartavel</p>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/merrymi-mecha-x-28k-vape-descartavel-portugal">Comprar agora</a>
+          </article>
+          <article class="product-card">
+            <img src="img/JNR-Quads-4-em-1-120K-Vape-Descartável-Portugal-Raspberry-Orange-Blueberry-Sour-Raspberry-JNR-VC-Boost-JNR-Red-Punch-120000-Tragadas.png" alt="JNR Quads 4 em 1 120K Puffs" class="product-image">
+            <h3>JNR Quads 4 em 1 120K</h3>
+            <p class="product-meta">120000 tragadas</p>
+            <p>Vape descartavel</p>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/jnr-quads-120k-vape-descartavel-portugal">Comprar agora</a>
+          </article>
+          <article class="product-card">
+            <img src="img/Fumot-RandM-Tornado-15K-Vape-Descartável-Portugal-Grape-Ice-15000-Tragadas.png" alt="Fumot RandM Tornado 15K Puffs" class="product-image">
+            <h3>Fumot RandM Tornado 15K</h3>
+            <p class="product-meta">15000 tragadas</p>
+            <p>Vape descartavel</p>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/fumot-tornado-15k-vape-descartavel-portugal">Comprar agora</a>
+          </article>
+          <article class="product-card">
+            <img src="img/JNR-RageGorilla-55K-Vape-Descartável-Portugal-Blueberry-Raspberry-Cherry-55000-Tragadas.png" alt="JNR RageGorilla 55K Puffs" class="product-image">
+            <h3>JNR RageGorilla 55K</h3>
+            <p class="product-meta">55000 tragadas</p>
+            <p>Vape descartavel</p>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/jnr-ragegorilla-55k-vape-descartavel-portugal">Comprar agora</a>
+          </article>
+          <article class="product-card">
+            <img src="img/Al-Fakher-Crown-Bar-EHose-X-60K-Vape-Descartável-Portugal-berry-blue-60000-Tragadas.png" alt="AlFakher E-Hose X 66K Puffs" class="product-image">
+            <h3>AlFakher E-Hose X 66K</h3>
+            <p class="product-meta">66000 tragadas</p>
+            <p>Vape descartavel</p>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/al-fakher-crown-bar-e-hose-x-60k-vape-descartavel-portugal">Comprar agora</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="guide" id="guide">
+      <div class="container guide__grid">
+        <div class="guide__content">
+          <span class="eyebrow">Guia Definitivo</span>
+          <h2>Como escolher vapes descartaveis, sabores de vape e numero de tragadas</h2>
+          <p>Os vapes descartáveis devem ser escolhidos com base nos sabores de vape, qualidade da bateria 
+            e número de tragadas, garantindo uma experiência prática e duradoura. Em Portugal, muitos utilizadores preferem vape descartável sem nicotina com sabores frutados e frescos para uma utilização mais suave no dia a dia.</p>
+
+          <div class="feature-list">
+            <article class="feature-item">
+              <h3>Prontos a usar</h3>
+              <p>Cada vape descartavel chega pronto a utilizar, sem configuracoes, recargas ou complicacoes.</p>
+            </article>
+            <article class="feature-item">
+              <h3>Muitas puffs</h3>
+              <p>Espaco ideal para destacar a duracao, autonomia e diferentes perfis de utilizacao.</p>
+            </article>
+            <article class="feature-item">
+              <h3>Sabores premium</h3>
+              <p>Perfeito para apresentar sabores de vape frutados, frescos, doces ou exclusivos.</p>
+            </article>
+            <article class="feature-item">
+              <h3>Com ou sem nicotina</h3>
+              <p>Possibilidade de adaptar a mensagem para vape com nicotina ou sem nicotina, conforme o catalogo.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="guide__media">
+          <img src="img/Fumot-JNR-VapSolo-Vape-Descartável-Portugal-Banner.png" alt="Banner de vapes descartaveis" class="guide__image">
+          <div class="mini-benefits">
+            <article>
+              <strong>Mais autonomia</strong>
+              <p>Modelos com tragadas altas para varios dias de utilizacao.</p>
+            </article>
+            <article>
+              <strong>Sabores modernos</strong>
+              <p>Frutados, mentolados e combinacoes premium com grande saida.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="reviews">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Opinioes</span>
+          <h2>O que dizem os nossos clientes</h2>
+          <p>Algumas avaliacoes reais sobre a experiencia de compra, a duracao e os sabores dos nossos vapes descartaveis.</p>
+        </div>
+
+        <div class="testi-shell">
+          <button class="testi-arrow" id="testiPrev" type="button" aria-label="Anterior">&lt;</button>
+          <div class="testi-viewport" id="testiViewport">
+            <div class="testi-track" id="testiTrack"></div>
+          </div>
+          <button class="testi-arrow" id="testiNext" type="button" aria-label="Seguinte">&gt;</button>
+        </div>
+
+        <div class="testi-dots" id="testiDots" aria-label="Paginacao dos testemunhos"></div>
+      </div>
+    </section>
+
+    <section class="discounts">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Ofertas</span>
+          <h2>Descontos pensados para compras maiores</h2>
+          <p>Quanto maior a encomenda, maiores podem ser as vantagens e a poupança na tua vape shop em Portugal.</p>
+        </div>
+
+        <div class="discount-grid">
+          <article class="discount-card">
+            <h3>Compra 5+</h3>
+            <strong>-10%</strong>
+            <p>Ideal para quem quer testar mais sabores de vape sem aumentar muito o custo por unidade.</p>
+            <a class="btn btn-secondary btn-block" href="https://vapeportugal.pt/">Comprar agora</a>
+          </article>
+          <article class="discount-card">
+            <h3>Compra 10+</h3>
+            <strong>-20%</strong>
+            <p>Uma excelente opcao para utilizadores regulares de cigarro eletronico que procuram muitas tragadas a melhor preco.</p>
+            <a class="btn btn-secondary btn-block" href="https://vapeportugal.pt/">Comprar agora</a>
+          </article>
+          <article class="discount-card discount-card--featured">
+            <span class="discount-badge">Melhor oferta</span>
+            <h3>Compra 50+</h3>
+            <strong>-50%</strong>
+            <p>Oferta exclusiva para distribuidores, compras em grupo ou campanhas grossistas de vape Portugal.</p>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/">Comprar agora</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container faq__grid">
+        <div class="faq__intro">
+          <span class="eyebrow">FAQ</span>
+          <h2>Perguntas frequentes sobre vapes descartáveis, sabores de vape e tragadas</h2>
+          <p>Encontra respostEncontra respostas rápidas às dúvidas mais comuns sobre vape descartável, cigarros eletrónicos, duração de tragadas, sabores de vape e utilização diária. 
+            Descobre como escolher o melhor vape sem nicotina em Portugal para uma experiência de vaping simples, moderna e prática.as rapidas as duvidas mais comuns sobre vape, utilizacao, duracao e escolha do melhor dispositivo.</p>
+          <div class="faq__highlights">
+            <article>
+              <strong>Tragadas controladas</strong>
+              <p>Escolhe o número de tragadas ideal para o teu estilo de vaping. Desde vape descartável compacto até modelos com milhares de tragadas e longa duração, temos opções para todos os tipos de vaper.</p>
+            </article>
+            <article>
+              <strong>Sabores variados</strong>
+              <p>Explora uma grande variedade de sabores de vape, incluindo sabores frutados, doces, frescos e mentolados. Descobre vapes descartáveis com aromas intensos e experiências únicas em cada tragada.</p>
+            </article>
+            <article>
+              <strong>Utilizacao simples</strong>
+              <p>Os cigarros eletrónicos descartáveis estão prontos a usar, sem carregamentos, sem recargas e sem manutenção. Basta abrir, inalar e desfrutar de uma experiência de vape prática e confortável.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="faq__accordion">
+          <article class="faq-item">
+            <button class="faq-question" aria-expanded="false">Quantas tragadas tem um vape descartavel?</button>
+            <div class="faq-answer">
+              <p>Depende do modelo. Existem opcoes desde 3.500 ate mais de 120.000 tragadas, ideais para diferentes tipos de utilizacao.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" aria-expanded="false">O que e um vape com ou sem nicotina?</button>
+            <div class="faq-answer">
+              <p>Os vapes com nicotina oferecem uma experiencia mais intensa, enquanto os vapes sem nicotina sao ideais para quem prefere apenas o sabor.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" aria-expanded="false">Como escolher o melhor sabor de vape?</button>
+            <div class="faq-answer">
+              <p>Depende do teu gosto pessoal. Os mais populares incluem sabores frutados, mentolados e doces.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" aria-expanded="false">Como saber qual vape escolher?</button>
+            <div class="faq-answer">
+              <p>Podes escolher o teu vape com base no sabor, numero de tragadas, design e intensidade da experiencia. Muitos vapers preferem comecar com sabores frutados e formatos compactos.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" aria-expanded="false">Os sabores de vape perdem intensidade com o uso?</button>
+            <div class="faq-answer">
+              <p>Os nossos vapes descartaveis foram desenvolvidos para manter sabores intensos e consistentes desde a primeira ate a ultima tragada.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" aria-expanded="false">Os vapes sao originais?</button>
+            <div class="faq-answer">
+              <p>Sim, todos os produtos da nossa vape shop em Portugal sao autenticos e selecionados para garantir qualidade e seguranca.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" aria-expanded="false">Porque escolher uma vape shop em Portugal?</button>
+            <div class="faq-answer">
+              <p>Comprar numa vape shop Portugal permite receber envio rapido, suporte mais proximo e acesso a vapes descartaveis originais e verificados.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="brand brand--footer" href="https://vapeportugal.pt/">
+          <img src="img/favicon-96x96.png" alt="VaperOfertas logo" class="brand__logo">
+          <span class="brand__text">
+            <strong>VapeDisconto</strong>
+            <small>Cigarros Eletricos</small>
+          </span>
+        </a>
+      </div>
+
+      <div>
+        <h3>Produtos</h3>
+        <ul>
+          <li><a href="https://vapeportugal.pt/collections/vapsolo-vapes-descartaveis-portugal">VapSolo</a></li>
+          <li><a href="https://vapeportugal.pt/collections/jnr-vapes-descartaveis-portugal">JNR</a></li>
+          <li><a href="https://vapeportugal.pt/collections/fumot-vapes-descartaveis-portugal">Fumot</a></li>
+          <li><a href="https://vapeportugal.pt/collections/merrymi-vape-descartaveis-portugal">MerryMi</a></li>
+          <li><a href="https://vapeportugal.pt/collections/adalya-vapes-descartaveis-portugal">Adalya</a></li>
+          <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher</a></li>
+          <li><a href="https://vapeportugal.pt/collections/blur-vapes-descartaveis-portugal">Blur</a></li>
+          <li><a href="https://vapeportugal.pt/collections/ghost-vapes-descartaveis-portugal">Ghost Vape</a></li>
+          <li><a href="https://vapeportugal.pt/collections/smok-spaceman-vapes-descartaveis-portugal">Smok</a></li>
+          <li><a href="https://vapeportugal.pt/collections/airmez-vapes-descartaveis-portugal">AirMez</a></li>
+          <li><a href="https://vapeportugal.pt/collections/hayati-vapes-descartaveis-portugal">Hayati</a></li>
+          <li><a href="https://vapeportugal.pt/collections/vozol-vapes-descartaveis-portugal">Vozol</a></li>
+          <li><a href="https://vapeportugal.pt/collections/imoment-vapes-descartaveis-portugal">iMoment</a></li>
+
+        </ul>
+      </div>
+
+      <div>
+        <h3>Navegacao</h3>
+        <ul>
+          <li><a href="https://vapeportugal.pt/">Inicio</a></li>
+          <li><a href="https://vapeportugal.pt/">Sobre nos</a></li>
+          <li><a href="https://vapeportugal.pt/">Opinioes</a></li>
+          <li><a href="https://vapeportugal.pt/">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contacto</h3>
+        <ul>
+          <li><a href="https://vapeportugal.pt/">info@vapeportugal.pt</a></li>
+          <li><a href="https://vapeportugal.pt/">+351 935 718 678</a></li>
+          <li><a href="https://vapeportugal.pt/">Politica de privacidade</a></li>
+          <li><a href="https://vapeportugal.pt/">Termos e condicoes</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer-expand">
+        <button id="cities-toggle" class="footer-toggle" type="button" aria-expanded="false" aria-controls="portugal-cities">
+          <span>Vapes Descartaveis em Portugal</span>
+          <span class="footer-toggle-arrow">v</span>
+        </button>
+
+        <ul id="portugal-cities" class="footer-cities" hidden>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Lisboa</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Porto</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Braga</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Coimbra</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Faro</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Aveiro</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Cascais</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Sintra</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Lagos</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Albufeira</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Evora</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Guimaraes</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Viseu</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Setubal</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Leiria</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Portimao</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Funchal</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Vila Nova de Gaia</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Ponta Delgada</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Braganca</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Viana do Castelo</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Covilha</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Tomar</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Beja</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Elvas</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Tavira</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Olhao</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Peniche</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Nazare</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Ericeira</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Torres Vedras</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Barcelos</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Chaves</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Espinho</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Matosinhos</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Amarante</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Santarem</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Castelo Branco</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Guarda</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Lamego</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Almada</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Oeiras</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Seixal</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Montijo</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Sesimbra</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Palmela</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Entroncamento</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Abrantes</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Figueira da Foz</a></li>
+          <li><a href="https://vapeportugal.pt/">Vapes Descartaveis em Peso da Regua</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; <span id="currentYear"></span> VapeDisconto.pt - Vape Descartavel em Portugal. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
