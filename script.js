@@ -22,6 +22,7 @@ function getStoredAgeVerification() {
 function setStoredAgeVerification() {
   try {
     window.sessionStorage.setItem(AGE_VERIFIED_KEY, "true");
+    document.documentElement.classList.add("age-verified");
   } catch (error) {
     console.warn("Age gate verification could not be persisted.", error);
   }

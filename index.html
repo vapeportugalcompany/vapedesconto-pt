@@ -4,12 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vape Portugal | Vape Descartavel, Vapes e Cigarro Eletronico</title>
+  <script>
+    try {
+      if (window.sessionStorage.getItem("ageVerified") === "true") {
+        document.documentElement.classList.add("age-verified");
+      }
+    } catch (error) {
+      console.warn("Age gate storage is unavailable.", error);
+    }
+  </script>
   <meta name="description" content="Descobre os melhores vapes descartáveis e cigarros eletrónicos em Portugal. Sabores intensos, opções com e sem nicotina e milhares de tragadas. Compra online na tua vape shop.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="img/favicon-96x96.png" type="image/x-icon">
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
 </head>
 <body>
   <div class="age-gate" id="ageGate" aria-hidden="false">
@@ -31,7 +44,7 @@
   <header class="site-header">
     <div class="container header-shell">
       <a class="brand" href="https://vapeportugal.pt/" aria-label="Inicio">
-        <img src="img/favicon-96x96.png" alt="VapeDisconto logo" class="brand__logo">
+        <img src="img/VapeDesconto-Logo.png" alt="VapeDesconto logo" class="brand__logo">
         <span class="brand__text">
           <strong>VapeDesconto</strong>
           <small>Vapes com maxima duracao</small>
@@ -52,7 +65,7 @@
         <a href="https://vapeportugal.pt/">Contacto</a>
       </nav>
 
-      <a class="btn btn-primary header-cta" href="https://vapeportugal.pt/">Comprar agora</a>
+      <a class="btn btn-primary header-cta" href="https://vapeportugal.pt/">COMPRE JÁ!</a>
     </div>
   </header>
 
@@ -77,7 +90,7 @@
           </p>
 
           <div class="hero__actions">
-            <a class="btn btn-primary" href="https://vapeportugal.pt/">Comprar agora</a>
+            <a class="btn btn-primary" href="https://vapeportugal.pt/">COMPRE JÁ!</a>
             <a class="btn btn-secondary" href="https://vapeportugal.pt/">Ver mais</a>
           </div>
         </div>
@@ -160,63 +173,63 @@
             <h3>VapSolo Quads 80K</h3>
             <p class="product-meta">80000 tragadas</p>
             <p>Vape descartavel</p>
-            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/vapsolo-quads-80k-vape-descartavel-portugal">Comprar agora</a>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/vapsolo-quads-80k-vape-descartavel-portugal">COMPRE JÁ!</a>
           </article>
           <article class="product-card">
             <img src="img/JNR-Triple-3-em-1-110K-Vape-Descartável-Portugal-Watermelon-Ice-Triple-Melon-Strawberry-Watermelon-Ice-110000-Tragadas.png" alt="JNR Triple 3 em 1 110K Puffs" class="product-image">
             <h3>JNR Triple 3 em 1 110K</h3>
             <p class="product-meta">110000 tragadas</p>
-            <p>Vapes descartaveis</p>
-            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/jnr-triple-110k-vape-descartavel-portugal">Comprar agora</a>
+            <p>Vape descartavel</p>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/jnr-triple-110k-vape-descartavel-portugal">COMPRE JÁ!</a>
           </article>
           <article class="product-card">
             <img src="img/Fumot-Eco-2-em-1-50K-Vape-Descartável-Portugal-Banana-Ice-Black-Dragon-Ice-50000-Tragadas.png" alt="Fumot Eco 2 em 1 50K Puffs" class="product-image">
             <h3>Fumot Eco 2 em 1 50K</h3>
             <p class="product-meta">50000 tragadas</p>
             <p>Vape descartavel</p>
-            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/fumot-eco-50k-vape-descartavel-portugal">Comprar agora</a>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/fumot-eco-50k-vape-descartavel-portugal">COMPRE JÁ!</a>
           </article>
           <article class="product-card">
             <img src="img/VapSolo-Twins-Pro-50K-Vape-Descartável-Portugal-Strawberry-kiwi-Strawberry-raspberry-chery-ice-50000-Tragadas.png" alt="VapSolo Twins Pro 50K Puffs" class="product-image">
             <h3>VapSolo Twins Pro 50K</h3>
             <p class="product-meta">50000 tragadas</p>
             <p>Vape descartavel</p>
-            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/vapsolo-twins-pro-50k-vape-descartavel-portugal">Comprar agora</a>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/vapsolo-twins-pro-50k-vape-descartavel-portugal">COMPRE JÁ!</a>
           </article>
           <article class="product-card">
             <img src="img/MerryMi-Mecha-X-28K-Vape-Descartável-Portugal-Peach-Guava-28000-Tragadas.png" alt="MerryMi Mecha X 28K Puffs" class="product-image">
             <h3>MerryMi Mecha X 28K</h3>
             <p class="product-meta">28000 tragadas</p>
             <p>Vape descartavel</p>
-            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/merrymi-mecha-x-28k-vape-descartavel-portugal">Comprar agora</a>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/merrymi-mecha-x-28k-vape-descartavel-portugal">COMPRE JÁ!</a>
           </article>
           <article class="product-card">
             <img src="img/JNR-Quads-4-em-1-120K-Vape-Descartável-Portugal-Raspberry-Orange-Blueberry-Sour-Raspberry-JNR-VC-Boost-JNR-Red-Punch-120000-Tragadas.png" alt="JNR Quads 4 em 1 120K Puffs" class="product-image">
             <h3>JNR Quads 4 em 1 120K</h3>
             <p class="product-meta">120000 tragadas</p>
             <p>Vape descartavel</p>
-            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/jnr-quads-120k-vape-descartavel-portugal">Comprar agora</a>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/jnr-quads-120k-vape-descartavel-portugal">COMPRE JÁ!</a>
           </article>
           <article class="product-card">
             <img src="img/Fumot-RandM-Tornado-15K-Vape-Descartável-Portugal-Grape-Ice-15000-Tragadas.png" alt="Fumot RandM Tornado 15K Puffs" class="product-image">
             <h3>Fumot RandM Tornado 15K</h3>
             <p class="product-meta">15000 tragadas</p>
             <p>Vape descartavel</p>
-            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/fumot-tornado-15k-vape-descartavel-portugal">Comprar agora</a>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/fumot-tornado-15k-vape-descartavel-portugal">COMPRE JÁ!</a>
           </article>
           <article class="product-card">
             <img src="img/JNR-RageGorilla-55K-Vape-Descartável-Portugal-Blueberry-Raspberry-Cherry-55000-Tragadas.png" alt="JNR RageGorilla 55K Puffs" class="product-image">
             <h3>JNR RageGorilla 55K</h3>
             <p class="product-meta">55000 tragadas</p>
             <p>Vape descartavel</p>
-            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/jnr-ragegorilla-55k-vape-descartavel-portugal">Comprar agora</a>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/jnr-ragegorilla-55k-vape-descartavel-portugal">COMPRE JÁ!</a>
           </article>
           <article class="product-card">
             <img src="img/Al-Fakher-Crown-Bar-EHose-X-60K-Vape-Descartável-Portugal-berry-blue-60000-Tragadas.png" alt="AlFakher E-Hose X 66K Puffs" class="product-image">
             <h3>AlFakher E-Hose X 66K</h3>
             <p class="product-meta">66000 tragadas</p>
             <p>Vape descartavel</p>
-            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/al-fakher-crown-bar-e-hose-x-60k-vape-descartavel-portugal">Comprar agora</a>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/products/al-fakher-crown-bar-e-hose-x-60k-vape-descartavel-portugal">COMPRE JÁ!</a>
           </article>
         </div>
       </div>
@@ -298,21 +311,21 @@
           <article class="discount-card">
             <h3>Compra 5+</h3>
             <strong>-10%</strong>
-            <p>Ideal para quem quer testar mais sabores de vape sem aumentar muito o custo por unidade.</p>
-            <a class="btn btn-secondary btn-block" href="https://vapeportugal.pt/">Comprar agora</a>
+            <p>Ideal para experimentar mais sabores sem aumentar demasiado o custo por unidade.</p>
+            <a class="btn btn-secondary btn-block" href="https://vapeportugal.pt/">COMPRE JÁ!</a>
           </article>
           <article class="discount-card">
             <h3>Compra 10+</h3>
             <strong>-20%</strong>
-            <p>Uma excelente opcao para utilizadores regulares de cigarro eletronico que procuram muitas tragadas a melhor preco.</p>
-            <a class="btn btn-secondary btn-block" href="https://vapeportugal.pt/">Comprar agora</a>
+            <p>Perfeito para uso regular, com mais tragadas e um preco por unidade bem mais vantajoso.</p>
+            <a class="btn btn-secondary btn-block" href="https://vapeportugal.pt/">COMPRE JÁ!</a>
           </article>
           <article class="discount-card discount-card--featured">
             <span class="discount-badge">Melhor oferta</span>
             <h3>Compra 50+</h3>
             <strong>-50%</strong>
-            <p>Oferta exclusiva para distribuidores, compras em grupo ou campanhas grossistas de vape Portugal.</p>
-            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/">Comprar agora</a>
+            <p>Pensado para revenda, compras em grupo e campanhas grossistas com a melhor margem.</p>
+            <a class="btn btn-primary btn-block" href="https://vapeportugal.pt/">COMPRE JÁ!</a>
           </article>
         </div>
       </div>
@@ -393,9 +406,9 @@
     <div class="container footer__grid">
       <div class="footer__brand">
         <a class="brand brand--footer" href="https://vapeportugal.pt/">
-          <img src="img/favicon-96x96.png" alt="VaperOfertas logo" class="brand__logo">
+          <img src="img/VapeDesconto-Logo.png" alt="VapeDesconto logo" class="brand__logo">
           <span class="brand__text">
-            <strong>VapeDisconto</strong>
+            <strong>VapeDesconto</strong>
             <small>Cigarros Eletricos</small>
           </span>
         </a>
