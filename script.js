@@ -12,7 +12,7 @@ const AGE_VERIFIED_KEY = "ageVerified";
 
 function getStoredAgeVerification() {
   try {
-    return window.sessionStorage.getItem(AGE_VERIFIED_KEY) === "true";
+    return window.localStorage.getItem(AGE_VERIFIED_KEY) === "true";
   } catch (error) {
     console.warn("Age gate storage is unavailable.", error);
     return false;
@@ -21,7 +21,7 @@ function getStoredAgeVerification() {
 
 function setStoredAgeVerification() {
   try {
-    window.sessionStorage.setItem(AGE_VERIFIED_KEY, "true");
+    window.localStorage.setItem(AGE_VERIFIED_KEY, "true");
     document.documentElement.classList.add("age-verified");
   } catch (error) {
     console.warn("Age gate verification could not be persisted.", error);

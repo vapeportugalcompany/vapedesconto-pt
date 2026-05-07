@@ -6,7 +6,7 @@
   <title>Vape Portugal | Vape Descartavel, Vapes e Cigarro Eletronico</title>
   <script>
     try {
-      if (window.sessionStorage.getItem("ageVerified") === "true") {
+      if (window.localStorage.getItem("ageVerified") === "true") {
         document.documentElement.classList.add("age-verified");
       }
     } catch (error) {
