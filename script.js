@@ -8,7 +8,7 @@ const currentYear = document.getElementById("currentYear");
 const citiesToggle = document.getElementById("cities-toggle");
 const portugalCities = document.getElementById("portugal-cities");
 const citiesArrow = citiesToggle?.querySelector(".footer-toggle-arrow");
-const AGE_VERIFIED_KEY = "ageVerified";
+const AGE_VERIFIED_KEY = "vapedesconto_age_verified";
 
 function getStoredAgeVerification() {
   try {
