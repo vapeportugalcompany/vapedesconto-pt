@@ -23,6 +23,228 @@
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 <link rel="manifest" href="site.webmanifest" />
+  <!-- TODO: Add Product Offer schema on real product templates when live price and stock data are available. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "OnlineStore",
+        "@id": "https://vapeportugal.pt/#organization",
+        "name": "VapeDesconto",
+        "url": "https://vapeportugal.pt/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://vapeportugal.pt/img/VapeDesconto-Logo.png"
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+351935718678",
+            "email": "info@vapeportugal.pt",
+            "contactType": "customer support",
+            "areaServed": "PT",
+            "availableLanguage": "Portuguese"
+          }
+        ],
+        "areaServed": {
+          "@type": "Country",
+          "name": "Portugal"
+        },
+        "availableLanguage": "pt-PT"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://vapeportugal.pt/#website",
+        "name": "VapeDesconto Portugal",
+        "url": "https://vapeportugal.pt/",
+        "publisher": {
+          "@id": "https://vapeportugal.pt/#organization"
+        },
+        "inLanguage": "pt-PT"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://vapeportugal.pt/#webpage",
+        "url": "https://vapeportugal.pt/",
+        "name": "Vape Portugal | Vape Descartavel, Vapes e Cigarro Eletronico",
+        "description": "Descobre os melhores vapes descartaveis e cigarros eletronicos em Portugal. Sabores intensos, opcoes com e sem nicotina e milhares de tragadas. Compra online na tua vape shop.",
+        "isPartOf": {
+          "@id": "https://vapeportugal.pt/#website"
+        },
+        "about": {
+          "@id": "https://vapeportugal.pt/#organization"
+        },
+        "breadcrumb": {
+          "@id": "https://vapeportugal.pt/#breadcrumb"
+        },
+        "mainEntity": [
+          {
+            "@id": "https://vapeportugal.pt/#recommended-products"
+          },
+          {
+            "@id": "https://vapeportugal.pt/#faq"
+          }
+        ],
+        "inLanguage": "pt-PT"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://vapeportugal.pt/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Pagina Inicial",
+            "item": "https://vapeportugal.pt/"
+          }
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://vapeportugal.pt/#recommended-products",
+        "name": "Produtos Recomendados",
+        "url": "https://vapeportugal.pt/#products",
+        "isPartOf": {
+          "@id": "https://vapeportugal.pt/#website"
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "name": "Melhores vapes descartaveis em Portugal",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "VapSolo Quads 80K",
+              "url": "https://vapeportugal.pt/products/vapsolo-quads-80k-vape-descartavel-portugal",
+              "image": "https://vapeportugal.pt/img/VapSolo-Quads-80K-Vape-Descart%C3%A1vel-Portugal-Strawberry-Mango-Watermelon-Ice-80000-Tragadas.png"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "JNR Triple 3 em 1 110K",
+              "url": "https://vapeportugal.pt/products/jnr-triple-110k-vape-descartavel-portugal",
+              "image": "https://vapeportugal.pt/img/JNR-Triple-3-em-1-110K-Vape-Descart%C3%A1vel-Portugal-Watermelon-Ice-Triple-Melon-Strawberry-Watermelon-Ice-110000-Tragadas.png"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Fumot Eco 2 em 1 50K",
+              "url": "https://vapeportugal.pt/products/fumot-eco-50k-vape-descartavel-portugal",
+              "image": "https://vapeportugal.pt/img/Fumot-Eco-2-em-1-50K-Vape-Descart%C3%A1vel-Portugal-Banana-Ice-Black-Dragon-Ice-50000-Tragadas.png"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "VapSolo Twins Pro 50K",
+              "url": "https://vapeportugal.pt/products/vapsolo-twins-pro-50k-vape-descartavel-portugal",
+              "image": "https://vapeportugal.pt/img/VapSolo-Twins-Pro-50K-Vape-Descart%C3%A1vel-Portugal-Strawberry-kiwi-Strawberry-raspberry-chery-ice-50000-Tragadas.png"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "MerryMi Mecha X 28K",
+              "url": "https://vapeportugal.pt/products/merrymi-mecha-x-28k-vape-descartavel-portugal",
+              "image": "https://vapeportugal.pt/img/MerryMi-Mecha-X-28K-Vape-Descart%C3%A1vel-Portugal-Peach-Guava-28000-Tragadas.png"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "JNR Quads 4 em 1 120K",
+              "url": "https://vapeportugal.pt/products/jnr-quads-120k-vape-descartavel-portugal",
+              "image": "https://vapeportugal.pt/img/JNR-Quads-4-em-1-120K-Vape-Descart%C3%A1vel-Portugal-Raspberry-Orange-Blueberry-Sour-Raspberry-JNR-VC-Boost-JNR-Red-Punch-120000-Tragadas.png"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Fumot RandM Tornado 15K",
+              "url": "https://vapeportugal.pt/products/fumot-tornado-15k-vape-descartavel-portugal",
+              "image": "https://vapeportugal.pt/img/Fumot-RandM-Tornado-15K-Vape-Descart%C3%A1vel-Portugal-Grape-Ice-15000-Tragadas.png"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "JNR RageGorilla 55K",
+              "url": "https://vapeportugal.pt/products/jnr-ragegorilla-55k-vape-descartavel-portugal",
+              "image": "https://vapeportugal.pt/img/JNR-RageGorilla-55K-Vape-Descart%C3%A1vel-Portugal-Blueberry-Raspberry-Cherry-55000-Tragadas.png"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "AlFakher E-Hose X 66K",
+              "url": "https://vapeportugal.pt/products/al-fakher-crown-bar-e-hose-x-60k-vape-descartavel-portugal",
+              "image": "https://vapeportugal.pt/img/Al-Fakher-Crown-Bar-EHose-X-60K-Vape-Descart%C3%A1vel-Portugal-berry-blue-60000-Tragadas.png"
+            }
+          ]
+        },
+        "inLanguage": "pt-PT"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://vapeportugal.pt/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quantas tragadas tem um vape descartavel?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende do modelo. Existem opcoes desde 3.500 ate mais de 120.000 tragadas, ideais para diferentes tipos de utilizacao."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O que e um vape com ou sem nicotina?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Os vapes com nicotina oferecem uma experiencia mais intensa, enquanto os vapes sem nicotina sao ideais para quem prefere apenas o sabor."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como escolher o melhor sabor de vape?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende do teu gosto pessoal. Os mais populares incluem sabores frutados, mentolados e doces."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como saber qual vape escolher?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Podes escolher o teu vape com base no sabor, numero de tragadas, design e intensidade da experiencia. Muitos vapers preferem comecar com sabores frutados e formatos compactos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Os sabores de vape perdem intensidade com o uso?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Os nossos vapes descartaveis foram desenvolvidos para manter sabores intensos e consistentes desde a primeira ate a ultima tragada."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Os vapes sao originais?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim, todos os produtos da nossa vape shop em Portugal sao autenticos e selecionados para garantir qualidade e seguranca."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Porque escolher uma vape shop em Portugal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Comprar numa vape shop Portugal permite receber envio rapido, suporte mais proximo e acesso a vapes descartaveis originais e verificados."
+            }
+          }
+        ],
+        "inLanguage": "pt-PT"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="age-gate" id="ageGate" aria-hidden="false">
