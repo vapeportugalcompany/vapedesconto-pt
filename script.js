@@ -74,6 +74,19 @@ if (menuToggle && siteNav) {
   });
 }
 
+document.querySelectorAll('a[href^="http"]').forEach((link) => {
+  try {
+    const url = new URL(link.href, window.location.href);
+
+    if (url.origin !== window.location.origin) {
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    }
+  } catch (error) {
+    console.warn("External link attributes could not be applied.", error);
+  }
+});
+
 faqButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const item = button.closest(".faq-item");
@@ -154,40 +167,46 @@ if (citiesToggle && portugalCities) {
   const GAP = 24;
   const testimonials = [
     {
-      image: "img/jnr-vape-descartavel-portugal-avaliacao.jpg",
-      alt: "Avaliacao Ana S.",
-      text: "\"Já experimentei vários cigarros eletrónicos mas este foi dos meus favoritos\"",
-      name: "Ana S."
+      image: "img/VapSolo-Quads-80K-Vape-Descartável-Portugal-Strawberry-Mango-Watermelon-Ice-80000-Tragadas.png",
+      alt: "Modelo VapSolo Quads 80K",
+      label: "Modelo apresentado",
+      text: "Referencia visivel nesta pagina informativa com ligacao direta para consulta no site principal.",
+      name: "VapSolo Quads 80K"
     },
     {
-      image: "img/merrymi-vape-descartavel-portugal-avaliacao.jpg",
-      alt: "Avaliacao Maria J.",
-      text: "\"Um dos melhores vapers que ja usei. Muitas tragadas, bom sabor e perfeito para o dia a dia.\"",
-      name: "Maria J."
+      image: "img/JNR-Triple-3-em-1-110K-Vape-Descartável-Portugal-Watermelon-Ice-Triple-Melon-Strawberry-Watermelon-Ice-110000-Tragadas.png",
+      alt: "Modelo JNR Triple 3 em 1 110K",
+      label: "Modelo apresentado",
+      text: "Modelo listado entre os destaques da pagina para adultos em Portugal.",
+      name: "JNR Triple 3 em 1 110K"
     },
     {
-      image: "img/vapsolo-vape-descartavel-portugal-avaliacao.jfif",
-      alt: "Avaliacao Monika W.",
-      text: "\"Comprei nesta vape shop e fiquei impressionada. Os vapes descartaveis sao de alta qualidade e duram bastante.\"",
-      name: "Xavier W."
+      image: "img/Fumot-Eco-2-em-1-50K-Vape-Descartável-Portugal-Banana-Ice-Black-Dragon-Ice-50000-Tragadas.png",
+      alt: "Modelo Fumot Eco 2 em 1 50K",
+      label: "Referencia visivel",
+      text: "Opcao incluida no bloco principal de modelos apresentados nesta pagina.",
+      name: "Fumot Eco 2 em 1 50K"
     },
     {
-      image: "img/alfahker-vape-descartavel-portugal-avaliacao.jpg",
-      alt: "Avaliacao Sofia C.",
-      text: "\"Este vape Portugal tem qualidade premium. Perfeito para quem procura vapes descartaveis com muitas tragadas.\"",
-      name: "Sofia C."
+      image: "img/VapSolo-Twins-Pro-50K-Vape-Descartável-Portugal-Strawberry-kiwi-Strawberry-raspberry-chery-ice-50000-Tragadas.png",
+      alt: "Modelo VapSolo Twins Pro 50K",
+      label: "Referencia visivel",
+      text: "Modelo disponivel na lista principal, com consulta adicional em vapeportugal.pt.",
+      name: "VapSolo Twins Pro 50K"
     },
     {
-      image: "img/fumot-vape-descartavel-portugal-avaliacao.jpg",
-      alt: "Avaliacao Ines T.",
-      text: "\"Vape top 😮‍💨 sabor limpo, boa bateria e muitas tragadas.\"",
-      name: "Ines T."
+      image: "img/JNR-RageGorilla-55K-Vape-Descartável-Portugal-Blueberry-Raspberry-Cherry-55000-Tragadas.png",
+      alt: "Modelo JNR RageGorilla 55K",
+      label: "Modelo apresentado",
+      text: "Destaque visual reutilizado para resumir o conteudo da pagina sem usar citacoes de clientes.",
+      name: "JNR RageGorilla 55K"
     },
     {
-      image: "img/merrymi-mk20000-vape-descartavel-portugal-avaliacao.jpg",
-      alt: "Avaliacao Beatriz M.",
-      text: "\"Adorei este vap. Compacto, facil de usar e com excelentes sabores de vape. Recomendo a qualquer vaper.\"",
-      name: "Beatriz M."
+      image: "img/Al-Fakher-Crown-Bar-EHose-X-60K-Vape-Descartável-Portugal-berry-blue-60000-Tragadas.png",
+      alt: "Modelo AlFakher E-Hose X 66K",
+      label: "Referencia visivel",
+      text: "Cartao informativo pensado para encaminhar a pesquisa completa para o site principal.",
+      name: "AlFakher E-Hose X 66K"
     }
   ];
 
@@ -208,7 +227,7 @@ if (citiesToggle && portugalCities) {
   function createCard(item) {
     const card = document.createElement("article");
     const image = document.createElement("img");
-    const stars = document.createElement("div");
+    const label = document.createElement("div");
     const text = document.createElement("p");
     const name = document.createElement("strong");
 
@@ -217,12 +236,13 @@ if (citiesToggle && portugalCities) {
     image.src = item.image;
     image.alt = item.alt;
     image.loading = "lazy";
-    stars.className = "testi-card__stars";
-    stars.textContent = "★★★★★";
+    image.decoding = "async";
+    label.className = "testi-card__stars";
+    label.textContent = item.label;
     text.textContent = item.text;
     name.textContent = item.name;
 
-    card.append(image, stars, text, name);
+    card.append(image, label, text, name);
     return card;
   }
 
